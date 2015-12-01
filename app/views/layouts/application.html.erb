@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shoe Repairer</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<!-- Nav  -->
+<div class="nav">
+  <ul>
+    <li>Home</li>
+    <li>Locations</li>
+    <li>Services</li>
+    <li>Contact Us</li>
+  </ul>
+</div>
+<%= yield %>
+<footer>&copy Shoe Repair Inc</footer>
+</body>
+</html>
