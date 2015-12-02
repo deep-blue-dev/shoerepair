@@ -7,39 +7,57 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <!-- TODO fix mobile button menu nav  -->
 <!-- Nav  -->
-<nav class="navbar navbar-default" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
-                <a class="navbar-brand" href="index.html">Shoe Repair Store</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+<nav class="navbar no-margin-bottom alt-font without-button shrink">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Shoe Repair Inc</a>
+    </div>
+    <div class="container navigation-menu">
+        <div class="row">
+          <div class="col-lg-2 col-md-2 navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+</div>
+            <div class="col-lg-10 col-md-9 col-sm-9 collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li>
-                        <a href="/">Home</a>
+                    <li><a href="/" class="">Home</a></li>
+                    <li><a href="#" class="">About</a></li>
+                    <li class="dropdown">
+                      <a href="#" aria-haspopup="true" aria-expanded="false" role="button" data-toggle="dropdown" class="dropdown-toggle">Service</a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">Service #1</a></li>
+                        <li><a href="#">Service #2</a></li>
+                        <li><a href="#">Service #3</a></li>
+                      </ul>
                     </li>
-                    <li>
-                        <a href="#">Service</a>
-                    </li>
-                    <li>
-                        <a href="#">Location</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact Us</a>
-                    </li>
-                    <li>
-                      <%= link_to 'New Image', new_image_path %>
-                    </li>
+                    <li><a href="#" class="">Blog</a></li>
+                    <li><a href="#" class="">Contact</a></li>
+                    <li><%= link_to "New Image", new_image_path %></li>
                 </ul>
             </div>
-            <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container -->
-    </nav>
+    </div>
+</nav>
+<!-- end navigation -->
 <%= yield %>
-<footer>&copy Shoe Repair Inc 2015</footer>
+<!-- <footer>&copy </footer> -->
+<footer class="wow fadeIn">
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 text-center">
+                    <span class="text-small text-uppercase letter-spacing-1 alt-font">&copy; Shoe Repair Inc 2015</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 </body>
 </html>

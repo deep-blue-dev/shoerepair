@@ -1,57 +1,72 @@
+<!-- Who are we section  -->
 
-  <div class="section1">
-  <h1>Who we are?</h1>
-  <p>
-    Text of why this shoe company is gonna nail any shoe issue a person might have they will fix anything just shoot the shoe and receive it fixed.
-  </p>
-  <p>
-    Shoe Repair specializes in shoe and boot repair and carries a complete line of shoe care and comfort products to help you keep your footwear looking and feeling good. We maintain standards of the highest quality in craftsmanship, materials and
-    merchandise. Customer satisfaction is our top priority. Visit one of the our Name of Shoe Repair locations in Miami and Fort Lauderdale FL to keep your footwear in top condition.
-  </p>
-  <img alt="Image #1" src=""/>
-  <img alt="Image #2" src=""/>
-</div>
+  <div class="section1 container panel panel-default">
+    <div class="col-md-6 col-md-offset-3 panel-body">
+      <h1>Who we are?</h1>
+      <p>
+        Shoe Repair specializes in shoe and boot repair and carries a complete line of shoe care and comfort products to help you keep your footwear looking and feeling good. We maintain standards of the highest quality in craftsmanship, materials and
+        merchandise. Customer satisfaction is our top priority. Visit one of the our Name of Shoe Repair locations in Miami and Fort Lauderdale FL to keep your footwear in top condition.
+      </p>
+      <img alt="Image #1" src=""/>
+      <img alt="Image #2" src=""/>
+    </div>
+  </div>
+  <!-- Service we do  -->
+  <div class="section2 container panel panel-default">
+    <div class="col-md-6 col-md-offset-3 panel-body">
+      <h1>Service's we do</h1>
+      <p>
+        Because we love what we do when it comes to fix shoes.
+      </p>
+      <img alt="Image of service #1" src=""/>
+      <img alt="Image of service #2" src=""/>
+      <img alt="Image of service #3" src=""/>
+    </div>
+  </div>
 
-<div class="section2">
-  <h1>Service's we do</h1>
-  <p>
-    Because we love what we do when it comes to fix shoes.
-  </p>
-  <img alt="Image #1 of service" src=""/>
-  <img alt="Image #2 of service" src=""/>
-</div>
+<!-- About US  -->
+    <div class="section3 container panel panel-default">
+      <div class="col-md-6 col-md-offset-3 panel-body">
+        <h1>About us</h1>
+        <p>
+          We have been doing this for a while our customer satisfaction has been amazing we enjoy what we do that why we do it so good.
+        </p>
+      </div>
+    </div>
+<!-- Link Images  -->
+  <div class="section4 container panel panel-default">
+    <div class="col-md-6 col-md-offset-3 panel-body">
+      <h1>Links for our images</h1>
+      <% @images.each do |link|  %>
+      <%= image_tag(link.link) %>
+        <% end %>
+    </div>
+  </div>
+<!-- Map Info Locations  -->
+  <div class="section5 container panel panel-default">
+    <div class="col-md-6 col-md-offset-3 panel-body">
+      <h1>Locations</h1>
+      <li>Miami, FL</li>
+      <li>Fort Lauderdale, FL</li>
+    </div>
+  </div>
 
-<div class="section3">
-  <h1>About us</h1>
-  <p>
-    We have been doing this for a while our customer satisfaction has been amazing we enjoy what we do that why we do it so good.
-  </p>
-</div>
-<div class="section4">
-  <h1>Links for our images</h1>
-  <% @images.each do |link|  %>
-  <%= image_tag(link.link) %>
-  <% end %>
-</div>
-<div class="section5">
-  <h1>Locations</h1>
-<li>Miami, FL</li>
-<li>Fort Lauderdale, FL</li>
-</div>
-
-<div class="section6">
-<h2>Map were we at</h2>
-<p>
-  <i class=""></i>Buro Building office 2
-</p>
-<p>
-  <i class=""></i>1000 Biscayne Blvd, Miami, FL 33333
-</p>
-<p>
-  <i class=""></i>Call us now 1-800(9999)!!
-</p>
-<p>
-  <i class=""></i>
-  <a href="mailto:info@shoerepair.com">Mail US</a>
-</p>
-</div>
+  <!-- Information address, phone, email  -->
+    <div class="section6 container panel panel-default">
+      <div class="col-md-6 col-md-offset-3 panel-body">
+        <h2>Map were we at</h2>
+        <p>
+          <i class=""></i>Buro Building office 2
+        </p>
+        <p>
+          <i class=""></i>1000 Biscayne Blvd, Miami, FL 33333
+        </p>
+        <p>
+          <i class=""></i>Call us now 1-800(9999)
+        </p>
+        <p>
+          <i class=""></i>
+          <a href="mailto:info@shoerepair.com">Mail US</a>
+        </p>
+      </div>
+    </div>

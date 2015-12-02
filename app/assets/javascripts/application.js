@@ -15,3 +15,7 @@
 //= require turbolinks
 //= require_tree .
 //= bootstrap-sprockets
+//= bootstrap-dropdown
+$(document).ready(function(){
+  $('.dropdown-toggle').dropdown();
+})
