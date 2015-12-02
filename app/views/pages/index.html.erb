@@ -29,10 +29,21 @@ Visit one of the our Name of Shoe Repair locations in Miami and Fort Lauderdale 
     We have been doing this for a while our customer satisfaction has been amazing we enjoy what we do that why we do it so good.
   </p>
 </div>
-
 <div class="section4">
+  <h1>Links for our images</h1>
+  <% @images.each do |link|  %>
+  <%= image_tag(link.link) %>
+  <% end %>
+</div>
+<div class="section5">
   <h2>Map were we at</h2>
   <p>
-    Address of our shop were we are ready to fix all shoes needed
+    Address of our shop 1000 Biscayne Blvd,<br>
+  </p>
+  <p>
+    Miami, FL 33333
+  </p>
+  <p>
+    Call us now 1-800(9999)!!
   </p>
 </div>
