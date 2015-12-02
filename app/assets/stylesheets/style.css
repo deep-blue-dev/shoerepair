@@ -71,9 +71,12 @@ body {
   line-height: 23px;
   letter-spacing: 0.02em
 }
+a, .color {
+  color:#626262
+}
 a, a:active {
   /*color: #626262;*/
-  color:#fff !important;
+  color:#fff ;
   text-decoration: none;
 }
 a:hover, a:focus {
