@@ -1009,7 +1009,6 @@ i {
   background: -o-linear-gradient(-45deg, #00efff 0%, #00ff97 100%);
   background: -ms-linear-gradient(-45deg, #00efff 0%, #00ff97 100%);
   background: linear-gradient(135deg, #00efff 0%, #00ff97 100%);
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00efff', endColorstr='#00ff97', GradientType=1);
 }
 .bg-crimson-red {
   background: #e31d3b !important
