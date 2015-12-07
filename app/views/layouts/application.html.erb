@@ -1,71 +1,74 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Shoe Repairer</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+      <%= csrf_meta_tags %>
 </head>
+
 <body>
   <!-- TODO fix mobile button menu nav  -->
-<!-- Nav  -->
-<nav class="navbar no-margin-bottom alt-font without-button shrink">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">Shoe Repair Inc</a>
-    </div>
-    <div class="container navigation-menu">
-        <div class="row">
-          <div class="col-lg-2 col-md-2 navbar-header">
-    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-    </button>
-</div>
+  <!-- Nav  -->
+  <nav class="navbar no-margin-bottom alt-font without-button shrink ">
+    <div class="container">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Shoe Repair Inc</a>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
             <div class="col-lg-10 col-md-9 col-sm-9 collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li><a href="/" class="">Home</a></li>
-                    <li><a href="#" class="">About</a></li>
-                    <li class="dropdown">
-                      <a href="#" aria-haspopup="true" aria-expanded="false" role="button" data-toggle="dropdown" class="dropdown-toggle">Service</a>
-                      <ul class="dropdown-menu">
-                        <li><a href="#">Service #1</a></li>
-                        <li><a href="#">Service #2</a></li>
-                        <li><a href="#">Service #3</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="#" class="">Blog</a></li>
-                    <li><a href="#" class="">Contact</a></li>
-                    <li><%= link_to "New Image", new_image_path %></li>
-                </ul>
+              <ul class="nav navbar-nav pull-right">
+                <li><a href="/" class="">Home</a></li>
+                <li><a href="#" class="">About</a></li>
+                <li class="dropdown">
+                  <a href="#" aria-haspopup="true" aria-expanded="false" role="button" data-toggle="dropdown" class="dropdown-toggle">Service</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Service #1</a></li>
+                    <li><a href="#">Service #2</a></li>
+                    <li><a href="#">Service #3</a></li>
+                  </ul>
+                </li>
+                <li><a href="#" class="">Blog</a></li>
+                <li><a href="#" class="">Contact</a></li>
+                <li>
+                  <%= link_to "New Image", new_image_path %>
+                </li>
+              </ul>
             </div>
         </div>
-    </div>
-</nav>
-<!-- end navigation -->
-<%= yield %>
-<!-- <footer>&copy </footer> -->
-<!-- <div class="section5 container panel panel-default">
+      </div>
+  </nav>
+  <!-- end navigation -->
+
+  <%= yield %>
+    <!-- <footer>&copy </footer> -->
+    <!-- <div class="section5 container panel panel-default">
   <div class="col-md-6 col-md-offset-3 panel-body">
     <h1>Locations</h1>
   <li>Miami, FL</li>
   <li>Fort Lauderdale, FL</li>
 </div>
 </div> -->
-<footer class="wow fadeIn">
+    <footer class="wow fadeIn">
 
-    <div class="footer-bottom">
+      <div class="footer-bottom">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12 col-sm-12 text-center">
-                    <span class="text-small text-uppercase letter-spacing-1 alt-font white">&copy; Shoe Repair Inc 2015</span>
-                </div>
+          <div class="row">
+            <div class="col-md-12 col-sm-12 text-center">
+              <span class="text-small text-uppercase letter-spacing-1 alt-font white">&copy; Shoe Repair Inc 2015</span>
             </div>
+          </div>
         </div>
-    </div>
-</footer>
+      </div>
+    </footer>
 </body>
+
 </html>
