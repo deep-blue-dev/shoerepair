@@ -1762,9 +1762,9 @@ i {
   -webkit-transition-duration: 0s;
   -o-transition-duration: 0s;
 }
-section {
+/*section {
   padding: 130px 0;
-}
+}*/
 .button-bg-area {
   padding: 80px 0;
 }
