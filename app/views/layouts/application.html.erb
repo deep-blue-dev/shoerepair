@@ -4,11 +4,9 @@
 <head>
   <title>Better Shoe Repair</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-      <%= csrf_meta_tags %>
-
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <% p csrf_meta_tags %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
@@ -33,12 +31,13 @@
                 <li><a href="#" class="">About</a></li>
                 <li class="dropdown">
                   <a href="#" aria-haspopup="true" aria-expanded="false" role="button" data-toggle="dropdown" class="dropdown-toggle">Service</a>
-                  <ul class="dropdown-menu">
+                  <!-- <ul class="dropdown-menu">
                     <li><a href="#">Service #1</a></li>
                     <li><a href="#">Service #2</a></li>
                     <li><a href="#">Service #3</a></li>
-                  </ul>
+                  </ul> -->
                 </li>
+                <li><a href="#" class="">Pricing</a></li>
                 <li><a href="#" class="">Blog</a></li>
                 <li><a href="#" class="">Contact</a></li>
                 <li>

@@ -17,5 +17,7 @@
 //= bootstrap-sprockets
 //= bootstrap-dropdown
 $(document).ready(function(){
-  $('.dropdown-toggle').dropdown();
+  console.log("application.js on the move");
+  // $('.dropdown-toggle').dropdown();
+
 })
