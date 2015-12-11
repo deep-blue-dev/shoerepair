@@ -1316,7 +1316,7 @@ i {
   margin: 3% !important
 }
 .margin-six {
-  margin: 3.5% !important
+  margin-top: 3.5% !important
 }
 .margin-seven {
   margin: 4% !important
@@ -1325,7 +1325,7 @@ i {
   margin: 4.5% !important
 }
 .margin-nine {
-  margin: 5% !important
+  /*margin: 5% !important*/
 }
 .margin-ten {
   margin: 5.5% !important
@@ -1417,7 +1417,7 @@ i {
   margin-bottom: 0 !important
 }
 .no-margin-top {
-  margin-top: 0 !important
+  /*margin-top: 0 !important*/
 }
 .no-margin-bottom {
   margin-bottom: 0 !important
@@ -3634,16 +3634,16 @@ ul.portfolio-filter-tab-style-6 {
 /* tab - style 2 */
 
 .tab-style-2 li {
-  display: inline-block;
-  margin: 0 15px;
+  /*display: inline-block;*/
+  margin: 0 0px; /*cambiado el margen de 0 15px a 0 0px para quitar un espacio que aparecia despues de la primera linea*/
   background: transparent !important;
   float: none
 }
 .tab-style-2 li:last-child {
-  margin: 0 0 0 15px
+  margin: 0 0 0 0px
 }
 .tab-style-2 li:first-child {
-  margin: 0 15px 0 0
+  margin: 0 0px 0 0
 }
 .tab-style-2 li a {
   border: 0 !important;
