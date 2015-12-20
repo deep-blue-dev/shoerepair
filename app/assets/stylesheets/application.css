@@ -13,6 +13,10 @@
  *= require_tree .
  *= require_self
  */
+.width-ag {
+  max-width: 83px;
+  margin-top: -12px;
+}
 
 .section1 {
   margin-top: 100px;
