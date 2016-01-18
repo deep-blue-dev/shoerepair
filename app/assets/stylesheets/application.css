@@ -20,7 +20,7 @@
 }
 
 .margin-fix {
-    
+
 }
 .section1 {
   margin-top: 100px;
@@ -56,4 +56,8 @@
 
 body {
   padding-top: 100px;
+}
+
+.black {
+  color:black;
 }
