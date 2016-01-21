@@ -13,6 +13,14 @@
  *= require_tree .
  *= require_self
  */
+ /*.padding-service {
+   padding: 7% !important;
+   margin-bottom: 10% !important;
+ }*/
+ /*.service-margin {
+  margin-top: 1% !important;
+ }*/
+
 .width-ag {
   max-width: 83px;
   margin-top: -12px;
